@@ -28,7 +28,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initPresenter() {
-
+        System.out.println("---------:测试");
     }
 
     @Override
