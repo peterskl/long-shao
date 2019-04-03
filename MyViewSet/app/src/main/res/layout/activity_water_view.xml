@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.app.kekoo.common.commonwidget.NormalTitleBar
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <my.com.myviewset.widget.water.WaterView
+        android:id="@+id/wv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:borderColor="@color/colorAccent"
+        app:borderSize="5dp"
+        app:borderStyle="circle" />
+    <!--app:aboveColor="@color/colorPrimary"-->
+
+    <Button
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goDemo"
+        android:visibility="gone"
+        android:text="demo"/>
+
+    <Button
+        android:id="@+id/btn_up"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="up"
+        android:onClick="up"/>
+
+    <Button
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:onClick="start"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wv"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="水波幅度："/>
+
+        <EditText
+            android:id="@+id/et_range"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btn_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重置进度"
+        android:layout_alignParentBottom="true"
+        android:onClick="reset"/>
+
+</RelativeLayout>

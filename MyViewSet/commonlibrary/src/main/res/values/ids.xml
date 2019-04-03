@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="banner_indicatorId" type="id" />
+
+    <item name="pageOne" type="id" />
+
+    <item name="statusbar_view" type="id"/>
+    <item name="translucent_view" type="id"/>
+</resources>
